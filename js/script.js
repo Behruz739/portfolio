@@ -17,7 +17,7 @@ const timeFunction = setInterval(() => {
    }
    if (minValue === 0) {
       hourValue--;
-      minValue = 60;
+      minValue = 24;
    }
    if (hourValue === 0) {
       dayValue--;
