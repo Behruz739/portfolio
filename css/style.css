@@ -1,4 +1,5 @@
 @import url(font.css);
+
 * {
    padding: 0;
    margin: 0;
@@ -17,7 +18,7 @@
    overflow: hidden;
 }
 
-.container .image{
+.container .image {
    position: absolute;
    height: 100%;
    width: 100%;
@@ -64,4 +65,61 @@
 .time .text {
    text-transform: capitalize;
    font-size: 12px;
+}
+
+.email-content {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   margin-top: 30px;
+   width: 100%;
+}
+
+.email-content p {
+   font-style: 13px;
+}
+
+.input-box {
+   display: flex;
+   align-items: center;
+   height: 40px;
+   max-width: 360px;
+   width: 100%;
+   margin-top: 20px;
+   column-gap: 20px;
+}
+
+.input-box input,
+.input-box button {
+   height: 100%;
+   outline: none;
+   border: 1px solid #fff;
+   border-radius: 4px;
+   background-color: rgb(255, 255, 255, 0.2);
+   font-weight: 400;
+}
+
+.input-box input {
+   color: #fff;
+   width: 100%;
+   padding: 0 15px;
+}
+
+input::placeholder {
+   color: #fff;
+
+}
+
+.input-box button {
+   cursor: pointer;
+   color: #fff;
+   white-space: nowrap;
+   padding: 0 20px;
+   transition: all 0.3s easy;
+}
+
+.input-box button:hover {
+   background-color: #fff;
+   color: #0d6a81;
+
 }
